@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="98e4aadb24d44c388bc620397923e3cb" Name="Diagram1" ZoomLevel="97">
+        <EntityTypeShape EntityType="SalonModel.Client" Width="1.5" PointX="0.75" PointY="7" />
+        <EntityTypeShape EntityType="SalonModel.ClientService" Width="1.5" PointX="3" PointY="9.125" />
+        <EntityTypeShape EntityType="SalonModel.DocumentByService" Width="1.5" PointX="5.25" PointY="9.625" />
+        <EntityTypeShape EntityType="SalonModel.Gender" Width="1.5" PointX="1.5" PointY="13" />
+        <EntityTypeShape EntityType="SalonModel.Manufacturer" Width="1.5" PointX="0.5" PointY="2.75" />
+        <EntityTypeShape EntityType="SalonModel.Product" Width="1.5" PointX="3" PointY="1.875" />
+        <EntityTypeShape EntityType="SalonModel.ProductPhoto" Width="1.5" PointX="5.25" PointY="5.75" />
+        <EntityTypeShape EntityType="SalonModel.ProductSale" Width="1.5" PointX="5.25" PointY="2.375" />
+        <EntityTypeShape EntityType="SalonModel.Service" Width="1.5" PointX="0.75" PointY="16.25" />
+        <EntityTypeShape EntityType="SalonModel.ServicePhoto" Width="1.5" PointX="3" PointY="18.75" />
+        <EntityTypeShape EntityType="SalonModel.sysdiagrams" Width="1.5" PointX="7.5" PointY="1" />
+        <EntityTypeShape EntityType="SalonModel.Tag" Width="1.5" PointX="3" PointY="15.875" />
+        <AssociationConnector Association="SalonModel.FK_Client_Gender" />
+        <AssociationConnector Association="SalonModel.FK_ClientService_Client" />
+        <AssociationConnector Association="SalonModel.FK_ClientService_Service" />
+        <AssociationConnector Association="SalonModel.FK_DocumentByService_ClientService" />
+        <AssociationConnector Association="SalonModel.FK_ProductSale_ClientService" />
+        <AssociationConnector Association="SalonModel.FK_Product_Manufacturer" />
+        <AssociationConnector Association="SalonModel.FK_ProductPhoto_Product" />
+        <AssociationConnector Association="SalonModel.FK_ProductSale_Product" />
+        <AssociationConnector Association="SalonModel.FK_ServicePhoto_Service" />
+        <AssociationConnector Association="SalonModel.AttachedProduct" />
+        <AssociationConnector Association="SalonModel.TagOfClient" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
